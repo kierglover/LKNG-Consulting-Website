@@ -80,7 +80,7 @@
           </div>
         </div>
         <div class="c-wrapper_content hero">
-          <div class="c-form w-form">
+          <div class="c-form">
             <form id="email-form" name="contact-form" data-name="Contact Form" method="post" class="c-form_wrapper" data-netlify="true">
               <input type="hidden" name="form-name" value="email-form">
               <div class="c-input_wrapper">
@@ -111,12 +111,15 @@
               </div>
               <input type="submit" data-wait="Please wait..." class="c-button w-button">
             </form>
-            <!-- <div class="w-form-done" style="display: none;">
-              <div>Thank you! Your submission has been received!</div>
-            </div>
-            <div class="w-form-fail" style="display: none;">
-              <div>Oops! Something went wrong while submitting the form.</div>
-            </div> -->
+  <!-- Success Message -->
+  <div data-netlify-success="true" style="display: none;">
+    Thank you! Your submission has been received.
+  </div>
+
+  <!-- Error Message -->
+  <div data-netlify-error="true" style="display: none;">
+    Oops! Something went wrong while submitting the form.
+  </div>
           </div>          
         </div>
       </div>
