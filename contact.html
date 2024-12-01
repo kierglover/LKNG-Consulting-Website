@@ -81,32 +81,23 @@
         </div>
         <div class="c-wrapper_content hero">
           <div class="c-form w-form">
-            <form name="contact-form" method="POST" data-netlify="true" class="c-form_wrapper">
-              <!-- Hidden Input to Enable Netlify Form Handling -->
-              <input type="hidden" name="form-name" value="contact-form">
-              
-              <!-- Full Name -->
+            <form id="email-form" name="email-form" data-name="Email Form" action="" method="post" class="c-form_wrapper" data-netlify="true">
+              <input type="hidden" name="form-name" value="email-form">
               <div class="c-input_wrapper">
                 <label for="name" class="c-label">Full name*</label>
-                <input type="text" id="name" name="name" class="c-input w-input" placeholder="Kagnaroth Ly" required>
+                <input class="c-input w-input" maxlength="256" name="name" data-name="Name" placeholder="Kagnaroth Ly" type="text" id="name" required>
               </div>
-          
-              <!-- Company Name -->
               <div class="c-input_wrapper">
-                <label for="company" class="c-label">Company name</label>
-                <input type="text" id="company" name="company" class="c-input w-input" placeholder="LKNG Consulting">
+                <label for="Company" class="c-label">Company name</label>
+                <input class="c-input w-input" maxlength="256" name="Company" data-name="Company" placeholder="LKNG Consulting" type="text" id="Company">
               </div>
-          
-              <!-- Phone Number -->
               <div class="c-input_wrapper">
-                <label for="phone" class="c-label">Phone number</label>
-                <input type="tel" id="phone" name="phone" class="c-input w-input" placeholder="010 814 499" required>
+                <label for="Phone-Number" class="c-label">Phone number</label>
+                <input class="c-input w-input" maxlength="256" name="Phone-Number" data-name="Phone Number" placeholder="010 814 499" type="tel" id="Phone-Number" required>
               </div>
-          
-              <!-- Service Requirements -->
               <div class="c-input_wrapper">
-                <label for="service" class="c-label">Service requirements*</label>
-                <select id="service" name="service" class="c-input w-select" required>
+                <label for="Serivce" class="c-label">Service requirements*</label>
+                <select id="Serivce" name="Serivce" data-name="Serivce" required class="c-input w-select">
                   <option value="">Select one...</option>
                   <option value="Tax services">Tax services</option>
                   <option value="Bookkeeping">Bookkeeping</option>
@@ -114,28 +105,19 @@
                   <option value="Incorporation">Incorporation</option>
                 </select>
               </div>
-          
-              <!-- Enquiry -->
-              <div class="c-input_wrapper">
-                <label for="enquiry" class="c-label">Enquiry</label>
-                <textarea id="enquiry" name="enquiry" class="c-inputtext w-input" placeholder="Enter here" maxlength="5000"></textarea>
+              <div id="w-node-edc82b21-9fbe-b220-91d6-987660541468-709ae34e" class="c-input_wrapper">
+                <label for="Enquiry-2" class="c-label">Enquiry</label>
+                <textarea id="Enquiry-2" name="Enquiry" maxlength="5000" data-name="Enquiry" placeholder="Enter here" class="c-inputtext w-input"></textarea>
               </div>
-          
-              <!-- Submit Button -->
-              <input type="submit" class="c-button form w-button" value="Submit">
+              <input type="submit" value="Submit" data-wait="Please wait..." class="c-button form w-button">
             </form>
-          
-            <!-- Success Message -->
             <div class="w-form-done" style="display: none;">
               <div>Thank you! Your submission has been received!</div>
             </div>
-          
-            <!-- Error Message -->
             <div class="w-form-fail" style="display: none;">
               <div>Oops! Something went wrong while submitting the form.</div>
             </div>
-          </div>
-                  
+          </div>          
         </div>
       </div>
     </div>
